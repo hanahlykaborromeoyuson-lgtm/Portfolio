@@ -1,45 +1,39 @@
-// Mobile navigation toggle
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile navigation toggle
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  navLinks.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
     });
-  });
-}
 
-// Set the current year in the footer
-const yearSpan = document.getElementById('year');
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  }
 
-// Contact form interaction
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const submitButton = contactForm.querySelector('button');
+  // Simple contact form interaction
+  const contactForm = document.querySelector(".contact-form");
 
-    if (submitButton) {
-      submitButton.textContent = 'Message Sent';
-      submitButton.disabled = true;
-    }
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const submitButton = contactForm.querySelector("button[type='submit']");
 
-    setTimeout(() => {
-      contactForm.reset();
       if (submitButton) {
-        submitButton.textContent = 'Send Message';
-        submitButton.disabled = false;
+        submitButton.textContent = "Message Sent";
+        submitButton.disabled = true;
+
+        setTimeout(() => {
+          submitButton.textContent = "Send";
+          submitButton.disabled = false;
+          contactForm.reset();
+        }, 1800);
       }
-    }, 1800);
-  });
-}
+    });
+  }
+});
+

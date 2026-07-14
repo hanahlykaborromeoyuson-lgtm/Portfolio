@@ -6,7 +6,7 @@
     <title>Hanah Lyka Yuson | Portfolio</title>
     <meta
       name="description"
-      content="Personal portfolio of Hanah Lyka Yuson, an Information Systems student with interests in digital creativity, multimedia editing, and practical technology solutions."
+      content="Professional portfolio website for Hanah Lyka Yuson, an Information Systems student with interests in creative solutions and multimedia editing."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,15 +21,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar container">
-        <a href="#home" class="logo">Hanah<span>.</span></a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <!-- Sticky header with navigation -->
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a href="#home" class="logo">Hanah Lyka</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -40,260 +41,254 @@
     </header>
 
     <main id="home">
-      <section class="hero container">
-        <div class="hero-content">
-          <p class="eyebrow">Information Systems Student</p>
-          <h1>Hanah Lyka Yuson</h1>
-          <h2>Bachelor of Science in Information Systems</h2>
-          <p class="role">Creative Solutions &amp; Basic Multimedia Editing</p>
-          <p class="intro">
-            I am passionate about combining creativity and technology to create organized,
-            visually appealing, and practical digital solutions. I enjoy learning new skills
-            and contributing to meaningful academic and creative projects.
-          </p>
+      <!-- Hero section -->
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Bachelor of Science in Information Systems</p>
+            <h1>Hanah Lyka Yuson</h1>
+            <h2>Creative Solutions &amp; Basic Multimedia Editing</h2>
+            <p class="intro">
+              I am passionate about combining creativity and technology to create organized,
+              visually appealing, and practical digital solutions. I enjoy learning new skills
+              and contributing to meaningful academic and creative projects.
+            </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact Me</a>
-            <a class="btn btn-secondary" href="#">Download Resume</a>
-            <a class="btn btn-tertiary" href="#projects">View Projects</a>
+            <div class="button-group">
+              <a class="button primary" href="#contact">Contact Me</a>
+              <a class="button secondary" href="resume/resume.pdf" download>Download Resume</a>
+              <a class="button outline" href="#projects">View Projects</a>
+            </div>
+
+            <div class="social-links" aria-label="Social links">
+              <a href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="mailto:hanahlykaborromeoyuson@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="social-links">
-            <a href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noreferrer" aria-label="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="mailto:hanahlykaborromeoyuson@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
+          <div class="profile-card">
+            <img src="images/picture.jpg" alt="Profile placeholder for Hanah Lyka Yuson" />
           </div>
-        </div>
-
-        <div class="hero-image">
-          <img
-            src="images/picture.jpg"
-            alt="Profile placeholder of Hanah Lyka Yuson"
-          />
         </div>
       </section>
 
-      <section class="about-section container" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>Creating thoughtful digital experiences with purpose</h2>
-        </div>
-        <div class="about-content">
-          <p>
-            I am Hanah Lyka Yuson, a Bachelor of Science in Information Systems student with
-            an interest in digital creativity, multimedia editing, and technology-based
-            solutions. I have experience creating user interface prototypes using Figma,
-            developing academic information system projects, and producing digital materials
-            for presentations and documentation. I am eager to continue improving my technical
-            and creative skills while contributing to meaningful projects.
+      <!-- About section -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>About Me</h2>
+          </div>
+          <p class="about-text">
+            I am Hanah Lyka Yuson, a Bachelor of Science in Information Systems student with an interest in digital creativity, multimedia editing, and technology-based solutions. I have experience creating user interface prototypes using Figma, developing academic information system projects, and producing digital materials for presentations and documentation. I am eager to continue improving my technical and creative skills while contributing to meaningful projects.
           </p>
         </div>
       </section>
 
-      <section class="skills-section container" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Tools and strengths I continue to grow with</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <i class="fas fa-camera-retro"></i>
-            <h3>Basic Photo Editing</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-video"></i>
-            <h3>Basic Video Editing</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-presentation-screen"></i>
-            <h3>Presentation Design</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-file-alt"></i>
-            <h3>Digital Documentation Support</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-file-word"></i>
-            <h3>Microsoft Office</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-palette"></i>
-            <h3>Canva</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-cloud"></i>
-            <h3>Google Workspace</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-pencil-ruler"></i>
-            <h3>Figma (UI Design &amp; Prototyping)</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fab fa-html5"></i>
-            <h3>HTML (Basic)</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-comments"></i>
-            <h3>Communication</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-headset"></i>
-            <h3>Customer Assistance</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-user-check"></i>
-            <h3>Basic Administrative Support</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-users"></i>
-            <h3>Teamwork</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-lightbulb"></i>
-            <h3>Problem Solving</h3>
-          </article>
-          <article class="skill-card">
-            <i class="fas fa-clock"></i>
-            <h3>Time Management</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="projects-section container" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected work that reflects my academic and creative interests</h2>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <img
-              src="images/firestation.jpg"
-              alt="Panabo FireAlert project placeholder"
-            />
-            <div class="project-info">
-              <h3>Panabo FireAlert: Community Safety Warning System</h3>
-              <p>
-                A community-based emergency reporting system that helps residents report fire
-                incidents and receive safety alerts through an organized digital platform.
-              </p>
-              <div class="tags">
-                <span>HTML</span>
-                <span>Figma</span>
-              </div>
-              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="images/mariaclara.png"
-              alt="Maria Clara Resort information system placeholder"
-            />
-            <div class="project-info">
-              <h3>Maria Clara Resort Information System</h3>
-              <p>
-                An information system developed to manage resort reservations, customer
-                records, and booking information through an organized digital solution.
-              </p>
-              <div class="tags">
-                <span>HTML</span>
-              </div>
-              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="images/portfolio.png"
-              alt="Personal portfolio website placeholder"
-            />
-            <div class="project-info">
-              <h3>Personal Portfolio Website</h3>
-              <p>
-                A responsive portfolio website that showcases my skills, academic projects,
-                and experiences as a Bachelor of Science in Information Systems student.
-              </p>
-              <div class="tags">
-                <span>HTML</span>
-              </div>
-              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
+      <!-- Skills section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Technical and Creative Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <i class="fas fa-camera"></i>
+              <h3>Basic Photo Editing</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-video"></i>
+              <h3>Basic Video Editing</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-presentation-screen"></i>
+              <h3>Presentation Design</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-file-alt"></i>
+              <h3>Digital Documentation Support</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-file-word"></i>
+              <h3>Microsoft Office</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-palette"></i>
+              <h3>Canva</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fab fa-google"></i>
+              <h3>Google Workspace</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Figma (UI Design &amp; Prototyping)</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fab fa-html5"></i>
+              <h3>HTML (Basic)</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-comments"></i>
+              <h3>Communication</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-headset"></i>
+              <h3>Customer Assistance</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-briefcase"></i>
+              <h3>Basic Administrative Support</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-users"></i>
+              <h3>Teamwork</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Problem Solving</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fas fa-clock"></i>
+              <h3>Time Management</h3>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="contact-section container" id="contact">
-        <div class="contact-card">
+      <!-- Projects section -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img src="images/firestation.jpg" alt="Panabo FireAlert project preview" />
+              <div class="project-content">
+                <h3>Panabo FireAlert: Community Safety Warning System</h3>
+                <p>
+                  A community-based emergency reporting system that helps residents report fire incidents and receive safety alerts through an organized digital platform.
+                </p>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>Figma</li>
+                </ul>
+                <a class="text-link" href="#">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/mariaclara.png" alt="Maria Clara Resort Information System preview" />
+              <div class="project-content">
+                <h3>Maria Clara Resort Information System</h3>
+                <p>
+                  An information system developed to manage resort reservations, customer records, and booking information through an organized digital solution.
+                </p>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                </ul>
+                <a class="text-link" href="#">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/profile.png" alt="Personal portfolio project preview" />
+              <div class="project-content">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                  A responsive portfolio website showcasing my skills, academic projects, and experiences as a Bachelor of Science in Information Systems student.
+                </p>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a class="text-link" href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section">
+        <div class="container contact-grid">
           <div class="contact-info">
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s connect</h2>
+            <div class="section-heading">
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s Connect</h2>
+            </div>
             <p>
-              I am always open to learning opportunities, collaborations, and meaningful
-              conversations about technology and design.
+              Feel free to reach out for academic collaboration, creative projects, or professional inquiries.
             </p>
             <ul class="contact-list">
               <li>
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:hanahlykaborromeoyuson@gmail.com">yusonhanahlyka@gmail.com</a>
+                <a href="mailto:hanahlykaborromeoyuson@gmail.com">hanahlykaborromeoyuson@gmail.com</a>
               </li>
               <li>
                 <i class="fab fa-facebook"></i>
-                <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noreferrer">Facebook</a>
+                <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noopener noreferrer">Facebook</a>
               </li>
               <li>
                 <i class="fab fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </li>
               <li>
                 <i class="fab fa-github"></i>
-                <a href="https://github.com/hanahlykaborromeoyuson" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
             </ul>
           </div>
 
           <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send</button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="site-footer">
       <div class="container footer-content">
         <div>
-          <p>© <span id="year"></span> Hanah Lyka Yuson</p>
+          <p class="footer-name">© 2026 Hanah Lyka Yuson</p>
           <p>Bachelor of Science in Information Systems</p>
           <p>All Rights Reserved.</p>
         </div>
-        <div class="social-links footer-socials">
-          <a href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <div class="social-links footer-social" aria-label="Footer social links">
+          <a href="https://github.com/hanahlykaborromeoyuson-lgtm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/hanah-lyka-b-yuson-b294b8412" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/hanahlyka.yuson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <i class="fab fa-facebook"></i>
           </a>
           <a href="mailto:hanahlykaborromeoyuson@gmail.com" aria-label="Email">
@@ -306,3 +301,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
